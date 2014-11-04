@@ -4,8 +4,3 @@ jdk:
 - oraclejdk7
 - openjdk7
 - openjdk6
-deploy:
-  provider: heroku
-  api_key:
-    secure: OufYgDu0TEImncnWrrOsPEzu5jtk1DU5x5Ix7WRmKUoA4THhNCaqMr1qKHB6g1ysRzbVHNZIqatgBzgCY7RL/nC7hbqHJCdCufvpI+b0g7+M6rSvgANcetsKdDkjaqnqSMhzIIvjKS/Rm4A9muztmgvVKuO+4b6J9KiCQibuja4=
-  strategy: git
