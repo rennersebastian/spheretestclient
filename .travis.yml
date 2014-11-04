@@ -7,4 +7,7 @@ jdk:
 deploy:
   provider: heroku
   api_key:
-    secure: Qr7c7U78rITtxWMfcjNrpew6CSZlDJvSDtab7TS2ljQ/oidny4RQOdhj6v8LJRUqiRxm7x1dZcpyCl2SyQb7MLDkDPf9Zbf5MSJRE9upGGzT/hEwi5tsLJVRNdosY+RaGbom2zLQvZ+ILGq78Fot9s149aAGQZUc/OzwPGDTQLU=
+    secure: NreCMvLcq6upCl/5ZqEeBC60TnBiE7g+Lu+6917sxQ+m2nzkUA7QTQN167qbjhF6itJm7+sV0VOqYoK1xNz2KTOSPaw/LugJmxbZkMSDwxAZ4sHlfY09Cq7UNOaDOverFoWHrrGNJugS1RIl3ZBtitMkBK69CAdfYyG4SCVb7A4=
+  app: spheretestclient
+  on:
+    repo: rennersebastian/spheretestclient
