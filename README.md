@@ -1,4 +1,5 @@
 spheretestclient
 ================
 
-Test Client for sphere API - Java
+Test Client for sphere API
+Java
