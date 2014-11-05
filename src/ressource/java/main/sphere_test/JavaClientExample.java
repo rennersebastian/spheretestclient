@@ -7,6 +7,7 @@ import io.sphere.client.shop.model.Product;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
 
 import com.google.common.util.concurrent.ListenableFuture;
@@ -34,8 +35,12 @@ public class JavaClientExample {
 	}
     
     public void listProductNames() throws InterruptedException, ExecutionException{
+    	Scanner s = new Scanner(System.in); 
+    	System.out.print("Page: "); 
+    	int page = s.nextInt(); 
+    	
     	ListenableFuture<SearchResult<Product>> products = sphere.products()
-		        .all().page(0).fetchAsync();
+		        .all().page(page-1).fetchAsync();
 		
 		List<Product> results = products.get().getResults();
 		
