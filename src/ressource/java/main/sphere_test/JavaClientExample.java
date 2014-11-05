@@ -38,7 +38,7 @@ public class JavaClientExample {
     	Scanner s = new Scanner(System.in); 
     	System.out.print("Page: "); 
     	int page = s.nextInt(); 
-    	
+    	s.close();
     	ListenableFuture<SearchResult<Product>> products = sphere.products()
 		        .all().page(page-1).fetchAsync();
 		
