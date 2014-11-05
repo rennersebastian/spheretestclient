@@ -39,8 +39,7 @@ public class JavaClientExample {
     	System.out.print("Page: "); 
     	int page = s.nextInt(); 
     	s.close();
-    	ListenableFuture<SearchResult<Product>> products = sphere.products()
-		        .all().page(page-1).fetchAsync();
+    	ListenableFuture<SearchResult<Product>> products = sphere.products().all().pageSize(5).page(page-1).fetchAsync();
 		
 		List<Product> results = products.get().getResults();
 		
